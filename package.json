@@ -1,12 +1,13 @@
 {
   "name": "gcp-oauth-automator",
-  "version": "1.0.0",
-  "description": "Automate Google OAuth 2.0 Web Client ID creation in GCP's Google Auth Platform using Playwright on macOS",
+  "version": "2.0.0",
+  "description": "Automate Google OAuth 2.0 client setup via Playwright — create new clients or renew credentials. Cross-platform: Windows, macOS, Linux.",
   "type": "module",
   "scripts": {
-    "create": "node scripts/create-oauth-client.mjs"
+    "create": "node scripts/oauth-client.mjs create",
+    "renew": "node scripts/oauth-client.mjs renew"
   },
-  "keywords": ["gcp", "oauth", "playwright", "automation", "google-auth", "cli", "google-cloud"],
+  "keywords": ["gcp", "oauth", "playwright", "automation", "google-auth", "cli", "google-cloud", "oauth2", "google-cloud-platform", "credentials"],
   "author": "Z1Code",
   "license": "MIT",
   "dependencies": {
